@@ -11,9 +11,10 @@ public class Main {
         // short ageShort = 345;
         // int ageInt = 23654;
         // long ageLong = 2222222222222l; // by default 2222222222 is integer
-
         // float aFloat = 5.6F; // by default 5.6 is double
         // double dDouble = 6.89;
+        // boolean val = true; // varible of type boolean takes only true or false
+        // unlike c/c++ which would take integers as well
 
         System.out.println("Taking Input from User");
         Scanner sc = new Scanner(System.in); // System.in represent variable of type InputStream class and means
