@@ -43,7 +43,7 @@ public class Main {
  * 
  * 
  * 
- * Integer[] gh=new Integer[]{1,3,4,56,67};
- * gh[0].intValue();
+ * Integer[] g=new Integer[]{1,3,4,56,67};
+ * g[0].intValue();
  * 
  */
