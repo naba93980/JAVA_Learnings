@@ -1,0 +1,24 @@
+noun -> class -> employee
+adjective -> attribute -> name, age, salary
+verb -> methods -> getSalary(), increment
+
+
+c++                                               java
+
+abstract class -> having at least one      abstract class -> having virtual 
+pure virtual function,                     as well as pure vitual function
+
+                                        interface -> having only pure virtual function
+
+
+abstract class cant create object       abstract class and interface cant create object 
+
+Function Overriding exist                        Function Overriding exist
+
+
+
+In JAVA:
+Java Heap Space is used throughout the application, but Stack is only used for the method — or methods — currently running. The Heap Space contains all objects are created, but Stack contains any reference to those objects. Objects stored in the Heap can be accessed throughout the application
+
+In C++:
+The object will be stored in the stack when it is created inside the block and when the control exits the block or function then the object is removed or destroyed. In case of dynamically allocated objects (during runtime) the object will be stored on the heap.

@@ -1,0 +1,20 @@
+Access Modifiers - controls the access level
+
+for classes - 
+
+1. public
+2. default
+
+for attributes, methods and constructors - 
+
+1. private -> members cannot be accessed (or viewed) from outside the class.
+2. default -> members are accessible from outside the class, but within the package
+3. protected -> The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+4. public -> The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+
+https://www.w3schools.com/JAVA/java_modifiers.asp
+
+https://www.javatpoint.com/access-modifiers
+
+https://www.geeksforgeeks.org/accessing-protected-members-in-java/#:~:text=While%20protected%20members%20can%20be,using%20the%20parent%20class's%20reference.
