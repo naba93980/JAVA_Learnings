@@ -15,6 +15,7 @@ abstract class cant create object       abstract class and interface cant create
 
 Function Overriding exist                        Function Overriding exist
 
+Support multiple inheritance               does not support multiple inheritance
 
 
 In JAVA:

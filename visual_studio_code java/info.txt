@@ -1,0 +1,4 @@
+CWH_Java -> like library
+Folders inside CWH_Harry -> like module
+Folders inside modules -> packages
+Files inside packages -> .java files i.e classes and interfaces
