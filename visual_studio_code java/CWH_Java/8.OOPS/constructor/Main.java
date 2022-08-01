@@ -14,9 +14,10 @@ class Employee {
         System.out.println("put some value while initialising");
     }
 }
+
 public class Main {
     public static void main(String[] args) {
-        Employee obj = new Employee();
-        Employee object = new Employee(56,"nabajyoti");
+        new Employee();
+        new Employee(56, "nabajyoti");
     }
 }
