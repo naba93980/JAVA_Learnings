@@ -7,8 +7,9 @@ class Base {
         System.out.println("Base class constructor called\n");
     }
 
-    Base(int a){
-        System.out.println("Base class constructor called a:  "+a);
+    Base(int a) {
+        this.x = a;
+        System.out.println("Base class constructor called x:  "+x);
     }
 };
 
