@@ -37,3 +37,5 @@ public class Main {
 // one.
 
 // u can call a static method inside a non-static method
+
+// https://www.linkedin.com/pulse/static-variables-methods-java-where-jvm-stores-them-kotlin-malisciuc
