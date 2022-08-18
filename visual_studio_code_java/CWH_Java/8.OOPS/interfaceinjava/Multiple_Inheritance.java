@@ -33,7 +33,7 @@ class SmartPhone implements GPS, Camera, MediaPlayer {
     }
 }
 
-public class MultipleInheritance {
+public class Multiple_Inheritance {
     public static void main(String[] args) {
         // SmartPhone obj=new SmartPhone();
         GPS obj = new SmartPhone();
