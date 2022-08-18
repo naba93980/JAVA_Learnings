@@ -6,7 +6,8 @@ abstract - The class cannot be used to create objects (To access an abstract cla
 
 For attributes and methods -
 
-final -	Attributes and methods cannot be overridden/modified
+final -	Attributes and methods cannot be overridden/modified,
+        Java final is equivalent to C++ const on primitive value. 
 
 static - Attributes and methods belongs to the class, rather than an object
 
