@@ -1,0 +1,8 @@
+access modifiers :
+    methods : public(available everywhere), private(available within interface only)
+    initialized variable : public
+
+non access modifiers :
+    methods : abstract(definition in subclass), default(definition in interface, can be overriden in subclass), static(definition in interface and can be accessed only with interface name)
+    initialized variables : final(constant i.e cant be overridden), static(belongs to interface but can be accessed by subclass)
+
