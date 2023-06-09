@@ -6,5 +6,7 @@ public class ObjectAndString {
         Integer b = Integer.valueOf(a);     // converts to Integer object
         String c = b.toString();                  // Integer object to String object
         System.out.println(c);
+        Integer d=Integer.valueOf(c);
+        System.out.println(d);
     }
 }

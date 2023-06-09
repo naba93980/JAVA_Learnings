@@ -1,0 +1,2 @@
+static code is executed at the time of class loading
+non-static code is executed at time of object creation, before constructor is invoked
