@@ -1,6 +1,10 @@
 package Abstract;
 
 public abstract class BMW {
+
+    BMW(){
+        System.out.println("inside costructor of abstract class");
+    }
     void commonFunc(){
         System.out.println("Inside commonFunc method");
     }
