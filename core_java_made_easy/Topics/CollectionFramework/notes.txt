@@ -1,0 +1,3 @@
+hashtable and vector as legacy classes as methods in these classes are synchronized and doesnot help in multithreading
+
+Java collections only store Objects, not primitive types; however we can store the wrapper classes

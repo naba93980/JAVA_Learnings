@@ -31,9 +31,31 @@ public class ListMethods {
 
         System.out.println("Second List:" + secondList);
 
+        // insert another list in a list
         list.addAll(5, secondList);
         System.out.println("list : " + list);
         
+        // contains
+        if(list.contains(-222)){
+            System.out.println("list has the value");
+        }
+        else{
+            System.out.println("list doesnot have the value");
+        }
+
+        // size of list and element at particular index
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+
+        // index of an element
+        System.out.println(list.indexOf(-222));
+
+        // remove element at particular index
+        list.remove(6);
+
+        System.out.println(list);
+
 
     }
 }
