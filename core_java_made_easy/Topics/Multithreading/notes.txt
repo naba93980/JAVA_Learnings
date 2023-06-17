@@ -1,0 +1,11 @@
+https://www.scaler.com/topics/thread-in-java/
+
+1. new state
+2. active state
+    runnable state  
+    running state
+3. waiting or blocked state
+4. terminated state
+
+thread.join() or Thread.sleep() -> waiting state 
+object to be used being used by some other thread -> blocked state
