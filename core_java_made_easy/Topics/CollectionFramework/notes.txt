@@ -1,3 +1,11 @@
 hashtable and vector as legacy classes as methods in these classes are synchronized and doesnot help in multithreading
 
 Java collections only store Objects, not primitive types; however we can store the wrapper classes
+
+array list are ordered and contagious
+linked list are ordered and random
+
+sets doesnot allow duplicated
+hashset are not ordered
+linkedhashset are ordered
+treeset sorts the element objects that we add to it

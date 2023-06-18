@@ -9,3 +9,4 @@ final class cant be extended or inherited
 final variable can't be assigned different value
 final method cant be overridden
 variables in interface are public, static and final  
+foreach loop cannot be used for assigning value
