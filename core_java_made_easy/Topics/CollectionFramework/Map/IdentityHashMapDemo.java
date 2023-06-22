@@ -1,4 +1,4 @@
-package MapDemo;
+package CollectionFramework.Map;
 
 import java.util.IdentityHashMap;
 import java.util.Map;

@@ -1,14 +1,13 @@
-package MapDemo;
+package CollectionFramework.Map;
 
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeSet;
 
-public class HashMapDemo {
+public class LinkedHashMapDemo {
     public static void main(String[] args) {
-        Map<String,Integer>map=new HashMap<>();
+        Map<String,Integer>map=new LinkedHashMap<>();
         map.put("Alice", 70);
         map.put("Bob", 60);
         map.put("John", (90));
@@ -20,7 +19,6 @@ public class HashMapDemo {
             System.out.println(entry);
         }
 
-
         Set<String> keySet=map.keySet();
         System.out.println("Key :");
         for (String key : keySet) {
@@ -29,11 +27,9 @@ public class HashMapDemo {
         }
 
         Collection<Integer> values=map.values();
-        // Set<Integer>valueSet=new TreeSet<>(values);
         System.out.println("Values :");
         for (Integer value : values) {
             System.out.println(value);
         }
-
     }
 }
