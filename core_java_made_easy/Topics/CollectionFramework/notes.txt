@@ -9,3 +9,13 @@ sets doesnot allow duplicated
 hashset are not ordered
 linkedhashset are ordered
 treeset sorts the element objects that we add to it
+
+queue-
+linkedlist(fifo), priorityqueue(custom order), blockingqueue extends from queue
+
+priorityqueue:
+duplicates not allowed
+insertion order is not preserved
+default natural sorting ordering
+null values not allowed
+customized sorting
