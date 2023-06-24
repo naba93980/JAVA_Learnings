@@ -1,0 +1,5 @@
+jvm treats objects of user-defined class & wrapper types differently
+prints object of user-defined class as reference
+prints object of wrapper class after calling the toString() method, also the values of String object is immutable
+
+String class is immutable - properties or state cannot be changed
