@@ -1,0 +1,18 @@
+in-general : toString, hashCode, equals
+in multithreading : finalize, wait, notify, notifyAll
+
+if two objects are equal according to the equals() method(even if they hv different reference locations), then they must have the same hash code. 
+
+Some classes provide their own implementation of hashCode() based on the contents of the object, while others inherit the default implementation from the Object class, which returns an integer that is based on the memory address of the object.
+default implementation of equals() in Object class compares objects using == operator which compares just memory location, some classes like String, StringBuffer, WrapperClasses overrides the method
+
+contract between equals() & hashCode() :-
+
+if equals() true then hashCode() value must be same 
+if equals() false then hashCode() may or may not be same, in general unequal object should have different hashcode to avoid collision
+if hashCode() is same, equals may or may not be true
+
+same hashcode must be in same bucket in HashMap, however if in same bucket may or may not be same hashCode
+
+HashMap & HashSet internally uses hashCode() to store objects
+https://chat.openai.com/c/f68ec397-6a2c-4d9a-a60d-87f29f1248bd

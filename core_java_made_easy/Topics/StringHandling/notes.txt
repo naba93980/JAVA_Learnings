@@ -3,3 +3,5 @@ prints object of user-defined class as reference
 prints object of wrapper class after calling the toString() method, also the values of String object is immutable
 
 String class is immutable - properties or state cannot be changed
+
+equals() method in object class (which by default compares just memory references)  is overridden in String class()
