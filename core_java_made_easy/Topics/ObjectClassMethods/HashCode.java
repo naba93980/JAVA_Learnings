@@ -1,6 +1,6 @@
 package ObjectClassMethods;
 
-class Passenger {
+class Passenger2 {
 
     private int id;
     private String firstName;
@@ -43,7 +43,7 @@ class Passenger {
 
 public class HashCode {
     public static void main(String[] args) {
-        Passenger passenger=new Passenger();
+        Passenger2 passenger=new Passenger2();
         passenger.setId(123);
         passenger.setFirstName("Nabajyoti");
         passenger.setLastName("Modak");
