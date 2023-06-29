@@ -12,6 +12,7 @@ public class Join extends Thread {
         sc.close();
 
         Join j=new Join();
+        long startTime = System.currentTimeMillis();
         j.start();
 
         try {
@@ -21,6 +22,8 @@ public class Join extends Thread {
         }
 
         System.out.println("Sum: "+Join.sum);
+        long endTime=System.currentTimeMillis();
+        System.out.println(endTime-startTime);
     }
 
     public void run() {             // joined thread
