@@ -1,0 +1,42 @@
+class Thread {
+
+public Thread currentThread() {
+    return new Thread();    // When Thread.currentThread() is invoked, the JVM retrieves the current thread-local variable associated with the executing thread.
+}
+
+void start(){
+this.run();
+};
+
+void run(){
+    
+}
+
+
+void join(){
+
+}
+
+}
+
+
+class Multithreading extends Thread {
+
+// child thread -> run function
+@override
+void run(){
+	Thread childThread = Thread.currentThread();
+}
+
+}
+
+// main thread -> main function ->  The main thread is a regular instance of the Thread class. It is created and managed by the JVM, and you don't need to explicitly create or manage it yourself.
+void main() {
+
+Multithreading mt = new Multithreading();   // mt can be called as a thread object
+mt.start();
+mt.join();
+
+Thread mainThread = Thread.currentThread();
+
+}

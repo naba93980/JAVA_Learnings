@@ -9,3 +9,10 @@ https://www.scaler.com/topics/thread-in-java/
 
 thread.join() or Thread.sleep() -> waiting state 
 object to be used being used by some other thread -> blocked state
+
+Here's a simplified explanation of how Thread.currentThread() works:
+
+Each thread created by the JVM has its own thread-local variable.
+The thread-local variable stores a reference to the Thread object representing that thread.
+When Thread.currentThread() is invoked, the JVM retrieves the current thread-local variable associated with the executing thread.
+The Thread object stored in the thread-local variable is returned.
