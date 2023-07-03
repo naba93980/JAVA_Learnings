@@ -1,5 +1,7 @@
 https://www.scaler.com/topics/thread-in-java/
 
+https://codedost.com/java/multithreading-in-java/life-cycle-of-a-thread-in-java/
+
 1. new state
 2. active state
     runnable state  
@@ -16,3 +18,7 @@ Each thread created by the JVM has its own thread-local variable.
 The thread-local variable stores a reference to the Thread object representing that thread.
 When Thread.currentThread() is invoked, the JVM retrieves the current thread-local variable associated with the executing thread.
 The Thread object stored in the thread-local variable is returned.
+
+
+yield() -> Preemptive Scheduling
+sleep() / join() / wait() -> Non-Preemptive Scheduling

@@ -1,0 +1,19 @@
+Java Thread acquires an object level lock when it enters into an instance synchronized java method and acquires a class level lock when it enters into static synchronized java method
+
+class X {
+    synchronized m1();
+    synchronized m2();
+    m3();
+}
+
+
+
+if thread t1 is accessing m1(), it locks the instance of X,
+so another thread t2 cant access m1() or thread t3 cant access m2() on the same instance of X
+as accessing synchronized methods of an instance requires locking that instance by the thread that is accessing,
+however another thread t4 can simultaneously access m3() on the same instance as accessing non synchronized code doesnot requires locking of that instance
+
+The sleep method causes the thread to temporarily pause its execution, but it does not release any locks or relinquish the hold on any resources. 
+Therefore, other threads will still be blocked and cannot enter the synchronized method until the sleeping thread wakes up and releases the lock.
+A thread will release the lock upon exit from the synchronized block, and not earlier.
+calling Thread.sleep() from a synchronized block is likely not a good idea.
