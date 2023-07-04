@@ -1,4 +1,4 @@
-package Multithreading.SynchronizationJava;
+package Multithreading.SynchronizationJava.ObjectLevelLock;
 
 public class SynchronizationDemo {
     public static void main(String[] args) {
