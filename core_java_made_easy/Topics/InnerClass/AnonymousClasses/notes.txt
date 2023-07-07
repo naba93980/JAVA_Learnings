@@ -1,0 +1,6 @@
+using anonynous inner class we can implement an interface with its original identity
+anonymous class cant have construtor
+They enable you to declare and instantiate a class at the same time. They are like local classes except that they do not have a name. Use them if you need to use a local class only once.
+anonymous classes are expressions, which means that you define the class in another expression.
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
