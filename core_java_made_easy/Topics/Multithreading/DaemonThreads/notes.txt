@@ -1,0 +1,14 @@
+Here are some key points about daemon threads:
+
+Daemon threads are created using the setDaemon(true) method on a Thread instance before starting the thread. if u try to set a thread as daemon after it started it will throw IllegalThreadStateException
+
+By default, threads created in Java are non-daemon threads.
+
+Daemon threads are typically used for background tasks or services that support the main operation of the program.
+
+When the JVM determines that only daemon threads are running, it can terminate the program and exit without waiting for the daemon threads to complete.
+
+Daemon threads are commonly used for tasks like garbage collection, monitoring, logging, or periodic maintenance activities.
+
+Daemon threads should not perform critical operations or tasks that require guaranteed completion, as they can be abruptly terminated when the JVM exits.
+
