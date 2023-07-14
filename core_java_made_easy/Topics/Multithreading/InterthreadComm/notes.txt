@@ -1,0 +1,6 @@
+wait() -> sends thread to wait state, thread may take some time to give up the lock
+notify() -> sends waiting thread to runnable state, waiting thread immediately takes lock on the object
+notifyAll()
+
+
+threads should have synchronized lock on the object

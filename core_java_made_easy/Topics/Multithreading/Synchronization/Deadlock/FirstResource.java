@@ -10,7 +10,7 @@ public class FirstResource {
 			e.printStackTrace();
 		}
 		System.out.println("Invoking method 2 of SR");
-		sr.method2();				// t thread locks sr as method2 is synchronized
+		sr.method2();				// // cant execute as sr is already locked by main
 	}
 	
 	public synchronized void method2() {
