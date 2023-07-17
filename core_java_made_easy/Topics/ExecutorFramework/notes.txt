@@ -1,0 +1,6 @@
+ThreadPool - creates pool of worker threads where pools can be assigned to particular task as required
+when the thread is done with that task, instead of dying out it will go back to the thread pool,
+basically threads can be reused
+
+
+https://stackoverflow.com/questions/22854498/how-exactly-does-tomcats-threadpool-work
