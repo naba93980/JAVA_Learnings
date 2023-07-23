@@ -22,21 +22,32 @@ public class PriorityQueueDemo {
         }
         System.out.println(q);
 
- 
-        // once an element is removed, order is not guranteed, so we should use treesort if we are to maintain order
+        // once an element is removed, order is not guranteed, so we should use treesort if we are to maintain order of insertion
         System.out.println(q.poll());
 
         System.out.println(q);
 
         try {
-        int e = q.remove();
-        System.out.println(e);
+            int e = q.remove();
+            System.out.println(e);
         } catch (Exception e) {
-        System.out.println(e);
-        System.out.println("Bye");
-        System.exit(1);
+            System.out.println(e);
+            System.out.println("Bye");
+            System.exit(1);
         }
 
+        System.out.println(q);
+
+        System.out.println(q.poll());
+        System.out.println(q);
+
+        System.out.println(q.poll());
+        System.out.println(q);
+
+        System.out.println(q.poll());
+        System.out.println(q);
+
+        System.out.println(q.poll());
         System.out.println(q);
 
     }
