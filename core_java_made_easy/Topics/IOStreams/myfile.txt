@@ -1,0 +1,3 @@
+welcome to IO Streams
+Initializr generates spring boot project with just what you need to start quickly
+To manually initialize the project

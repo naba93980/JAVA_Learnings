@@ -17,7 +17,7 @@ public class CallableFutureDemo {
             // Future is similar to Promise of javascript
             Future<Integer> futureResultPromise = service.submit(myCallable);          // similar to async code like readFile() (which delegates tasks to worker thread)  returning a promise in nodejs
             try {
-                System.out.println(futureResultPromise.get());     // similar to await in javascript as it is blocking
+                System.out.println(futureResultPromise.get());     // similar to await in javascript as it is blocking          // the caller thread need not be async returning promise like in node js, as each caller thread is for one single connection, while is nodejs the caller thread would hv been actually the one single main thread(event-loop) for all connections        // here caller threads waits for result when get() is called which otherwise in nodejs the result would have been received as arg. in callback which again would hv bn executed by main thread
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

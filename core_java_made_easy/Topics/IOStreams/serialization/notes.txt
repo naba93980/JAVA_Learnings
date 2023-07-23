@@ -1,0 +1,2 @@
+writing and reading `objects to file streams or network streams
+for an object to be serialized, its class should implement Serializable marker interface
