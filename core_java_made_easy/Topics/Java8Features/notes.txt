@@ -1,0 +1,14 @@
+java8 features -
+ 
+Lambda expressions
+Functional Interfaces
+Default Methods
+Predicates
+Functions
+Stream API
+
+Lambda expressions -> anonymous function that has no access specifier, name, may not have return type, parameter type
+
+Functional Interfaces -> it is an Interface that has only one abstract method(called functional method) - eg. Runnable, Comparator method
+It can have default methods as well but abstract method only one
+It is shown by @FunctionalInterface annotation (not mandatory tho)
