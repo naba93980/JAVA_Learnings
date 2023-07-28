@@ -1,8 +1,6 @@
 visual_studio_code_java/info.txt
 Resources
-**.class
-core_java_made_easy/Topics/.classpath
-core_java_made_easy/Topics/.project
+bin/
 core_java_made_easy/Topics/.vscode/settings.json
 core_java_made_easy/Topics/IOStreams/copied-sky.jpg
 core_java_made_easy/Topics/IOStreams/download-sky.jpg
