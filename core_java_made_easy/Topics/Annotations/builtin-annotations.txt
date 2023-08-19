@@ -1,0 +1,107 @@
+Some of the most commonly used built-in annotations provided by the JDK (Java Development Kit):
+
+@Override: Indicates that a method in a subclass is intended to override a method in its superclass.
+@Deprecated: Marks a class, method, field, or other element as outdated and discouraged from use.
+@SuppressWarnings: Instructs the compiler to suppress specific warnings for the annotated element or code block.
+@SafeVarargs: Indicates that a method with a varargs parameter is safe to call, even if it generates unchecked warnings.
+@FunctionalInterface: Marks an interface as a functional interface, ensuring it has exactly one abstract method.
+@Nullable and @NonNull: Indicate whether a variable or parameter can be null or non-null, respectively.
+@Documented: Specifies that the annotated element should be included in the generated JavaDoc documentation.
+@Retention: Specifies how long an annotation should be retained. Possible values include SOURCE, CLASS, and RUNTIME.
+@Target: Specifies where an annotation can be applied. Possible values include TYPE, METHOD, FIELD, etc.
+@Inherited: Indicates that an annotation declared on a superclass should be inherited by its subclasses.
+@Repeatable: Allows an annotation to be applied multiple times to the same element.
+@Native: Marks a method as a bridge to a native implementation.
+
+
+1. Standard Java Annotations:
+
+java.lang -
+@Override
+@Deprecated
+@SuppressWarnings
+@SafeVarargs
+@FunctionalInterface
+
+java.lang.annotation - 
+@Native
+@Inherited
+@Documented
+@Retention
+@Target
+@Repeatable
+
+2. Meta Annotations:
+
+@Repeatable
+@Inherited
+@Native
+@Target
+@Retention
+@Documented
+
+
+3. Annotations for Null Analysis:
+
+@NonNull
+@Nullable
+
+4. Annotations for Reflection:
+
+@CallerSensitive
+@PolymorphicSignature
+
+5. Annotations for Enums:
+
+@Enum
+@EnumConstant
+@Retention
+@Target
+
+
+6. Annotations for RMI (Remote Method Invocation):
+
+@Remote
+@Corba
+
+
+7. Annotations for JavaDoc:
+
+@see
+@throws
+@link
+@inheritDoc
+@version
+
+
+8. Annotations for Concurrency:
+
+@ThreadSafe
+@NotThreadSafe
+
+
+9. Annotations for Testing:
+
+@Test
+@Before
+@After
+@BeforeClass
+@AfterClass
+
+
+10. Annotations for JavaBeans:
+
+@Bean
+@ConstructorProperties
+
+
+Enums used in Annotations:
+
+java.lang.annotation - 
+
+ElementType - ANNOTATION_TYPE , CONSTRUCTOR , FIELD , LOCAL_VARIABLE , METHOD , MODULE, PACKAGE , PARAMETER , TYPE , TYPE_USE and TYPE_PARAMETER 
+RetentionPolicy - CLASS , RUNTIME , SOURCE
+
+
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/package-tree.html
