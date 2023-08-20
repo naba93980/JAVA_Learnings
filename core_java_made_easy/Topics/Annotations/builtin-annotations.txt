@@ -72,6 +72,8 @@ java.lang.annotation -
 @link
 @inheritDoc
 @version
+@author
+@param
 
 
 8. Annotations for Concurrency:

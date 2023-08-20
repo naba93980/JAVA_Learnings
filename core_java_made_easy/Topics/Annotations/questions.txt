@@ -1,0 +1,15 @@
+Who processes java buidin annotations?
+
+1. Java Compiler
+2. Reflection API
+3. Frameworks and Libraries
+4. JavaDoc Documentation Generation
+5. IDEs and Development Tools
+
+They have got builtin annotation proccessors.
+
+-----
+
+Can runtime annotation be used to generate new code?
+
+Runtime annotations are generally not used to directly generate new code in the same way that build-time annotations do.

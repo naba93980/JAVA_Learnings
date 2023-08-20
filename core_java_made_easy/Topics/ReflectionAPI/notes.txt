@@ -1,0 +1,18 @@
+Reflection API allows your program to "reflect" on itself or other classes, like looking into a mirror to see your own reflection,
+It allows you to inspect and manipulate classes, methods, fields, and other elements of your code, but it does not directly modify the code itself.
+
+
+Inspecting Classes: 
+You can obtain information about classes such as their name, superclass, interfaces they implement, and constructors they have.
+
+Accessing Fields: 
+You can retrieve information about fields within a class, including their names, types, and values.
+
+Invoking Methods: 
+You can call methods on classes by their names and parameter types, even if you didn't know about those methods at compile time.
+
+Creating Instances: 
+You can create new instances of classes dynamically, which can be useful when you don't know the exact class to instantiate until runtime.
+
+Accessing Annotations: 
+You can retrieve and process annotations attached to classes, methods, fields, etc., during runtime, allowing you to respond to metadata within your code.
