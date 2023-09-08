@@ -1,7 +1,7 @@
 Who processes java buidin annotations?
 
 1. Java Compiler
-2. Reflection API
+2. Reflection API(can access the annotations, which can be used by frameworks and libraries)
 3. Frameworks and Libraries
 4. JavaDoc Documentation Generation
 5. IDEs and Development Tools

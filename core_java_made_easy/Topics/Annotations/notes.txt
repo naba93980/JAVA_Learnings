@@ -1,4 +1,5 @@
 https://chat.openai.com/c/8b2acedc-8be0-4272-9a9a-cd0a2eebb032
+https://blogs.oracle.com/javamagazine/post/annotations-an-inside-look
 
 Annotations are special markers that provide metadata about your classes, methods, fields
 They can also have additional information inside parentheses, which is called annotation parameters.
@@ -22,3 +23,7 @@ they are included in your source code and become part of your compiled classes
 they are processed while your program is running which means that they can be used to customize the behavior of your code during its execution
 at runtime, you can use the Java Reflection API to retrieve and process annotations
 basically, these annotations provide a way to attach metadata which can be used to dynamically determine how certain parts of the code should behave, they do not modify the actual source code or bytecode of your program
+
+
+compile-time / build-time annotations are processed by Annotation Processors
+run-time annotations are mostly processed by External frameworks & libraries
