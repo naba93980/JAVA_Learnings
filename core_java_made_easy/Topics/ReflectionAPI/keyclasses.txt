@@ -1,0 +1,6 @@
+Key classes in Reflection API
+
+java.lang.Class -> instance representing a class that has been loaded in jvm
+
+it has methods
+

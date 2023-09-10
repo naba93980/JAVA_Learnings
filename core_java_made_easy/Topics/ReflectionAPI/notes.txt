@@ -16,3 +16,8 @@ You can create new instances of classes dynamically, which can be useful when yo
 
 Accessing Annotations: 
 You can retrieve and process annotations attached to classes, methods, fields, etc., during runtime, allowing you to respond to metadata within your code.
+
+
+
+Reflective code generation is a technique that involves using reflection to dynamically create new code and classes. 
+This technique allows you to generate code programmatically based on runtime information, annotations, or other dynamic factors.

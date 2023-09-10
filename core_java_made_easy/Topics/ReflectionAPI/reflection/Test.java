@@ -15,13 +15,17 @@ public class Test {
         // gets all the constructors
         Constructor<?>[] constructors = calClass.getConstructors();
         System.out.println(Arrays.toString(constructors));
+
+        // gets all the methods
         Method[] methods = calClass.getDeclaredMethods();
         System.out.println(Arrays.toString(methods));
 
         Constructor<?> constructor = calClass.getConstructor(); // gets the default constructor
         Calculator calClassInstance = (Calculator) constructor.newInstance();
         calClassInstance.setNum1(100);
-        System.out.println(calClassInstance.getNum1());
+
+        Method method1 = calClass.getMethod("getNum1"); // gets the required method
+        System.out.println(method1.invoke(calClassInstance));
 
         Constructor<?> constructor2 = calClass.getConstructor(int.class); // gets the parameterized constructor
         Calculator calClassInstance2 = (Calculator) constructor2.newInstance(5);
