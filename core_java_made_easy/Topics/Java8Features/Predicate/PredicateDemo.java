@@ -5,6 +5,7 @@ import java.util.function.Predicate;
 public class PredicateDemo {
     public static void main(String[] args) {
         Predicate<Integer>result=(i)->i>20;      // you don't need to explicitly provide a return statement because the method's return type is implicitly defined as boolean, and the expression or statement inside the lambda body will be used as the return value.
+        System.out.println(result.test(25));
     }
 }
 
