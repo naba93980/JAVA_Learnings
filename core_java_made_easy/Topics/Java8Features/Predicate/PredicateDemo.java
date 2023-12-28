@@ -9,4 +9,6 @@ public class PredicateDemo {
     }
 }
 
+// filter of js map, filter, reduce
+
 // Using generics, primitive types can not be passed as type parameter so Integer is used above and not int
