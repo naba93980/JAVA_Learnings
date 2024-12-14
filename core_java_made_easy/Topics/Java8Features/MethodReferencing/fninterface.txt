@@ -1,0 +1,101 @@
+1. In Java, method references (`::`) can be used in four ways:
+
+1. Reference to a static method: `ContainingClass::staticMethodName`
+2. Reference to an instance method of a particular object: `containingObjectInstance::instanceMethodName`
+3. Reference to an instance method of an arbitrary object of a particular type: `ContainingType::methodName`
+4. Reference to a constructor: `ClassName::new`
+
+In your case, `CsrfSpec::disable` is a reference to an instance method (`disable`) of an arbitrary object of a particular type (`CsrfSpec`). This is the third type of method reference.
+
+This means that `CsrfSpec::disable` can be used wherever you need a functional interface that takes an instance of `CsrfSpec` and doesn't return a result. For example, it can be used as a `Consumer<CsrfSpec>`, where it will call the `disable` method on the `CsrfSpec` object passed to it.
+
+
+2. so method referencing only work when their is functional interface that take a parameter as instance ?
+
+Yes, you're correct. When you're using a method reference like `ClassName::methodName` for an instance method (not a static method), it's used with functional interfaces that take at least one parameter. The first parameter of the functional interface's method becomes the target of the method call.
+
+In your code, `CsrfSpec::disable` is used with the `csrf` method of `ServerHttpSecurity`. The `csrf` method takes a `Consumer<CsrfSpec>`. `Consumer` is a functional interface with a method `accept` that takes one parameter. So when you call `csrf(CsrfSpec::disable)`, it's equivalent to `csrf(csrfSpec -> csrfSpec.disable())`. The `csrfSpec` object is an instance of `CsrfSpec`, and the `disable` method is called on it.
+
+This kind of method reference is useful when you want to use a method of the parameter in the lambda expression. It makes the code more concise and easier to read.
+
+
+
+3. and if its of type instancename::method
+
+When you use `instanceName::methodName`, it's a reference to an instance method of a specific object. This is often used with functional interfaces that don't take any parameters, or where the parameters of the method don't include the object the method is being called on.
+
+For example, suppose you have a `List<String>` and you want to print every element. You could do this with a lambda:
+
+```java
+List<String> list = Arrays.asList("a", "b", "c");
+list.forEach(s -> System.out.println(s));
+```
+
+But you could also do it with a method reference:
+
+```java
+List<String> list = Arrays.asList("a", "b", "c");
+list.forEach(System.out::println);
+```
+
+In this case, `System.out::println` is a reference to the `println` method of the specific object `System.out`. The `println` method is called on `System.out` for each element of the list.
+
+This kind of method reference is useful when you're working with methods that don't need to be called on the objects you're working with in your lambda expression. It can make your code more concise and easier to read.
+
+
+
+
+4. and if its classname::staticmethod
+
+When you use `className::staticMethodName`, it's a reference to a static method of a class. This is often used with functional interfaces where the parameters of the method match the parameters of the functional interface's method.
+
+For example, suppose you have a `List<String>` and you want to convert all the strings to integers. You could do this with a lambda:
+
+```java
+List<String> list = Arrays.asList("1", "2", "3");
+List<Integer> numbers = list.stream()
+                            .map(s -> Integer.parseInt(s))
+                            .collect(Collectors.toList());
+```
+
+But you could also do it with a method reference:
+
+```java
+List<String> list = Arrays.asList("1", "2", "3");
+List<Integer> numbers = list.stream()
+                            .map(Integer::parseInt)
+                            .collect(Collectors.toList());
+```
+
+In this case, `Integer::parseInt` is a reference to the static `parseInt` method of the `Integer` class. The `parseInt` method is called for each element of the list.
+
+This kind of method reference is useful when you're working with static methods that operate on the objects you're working with in your lambda expression. It can make your code more concise and easier to read.
+
+
+5. and for classname::new
+
+When you use `ClassName::new`, it's a reference to a constructor of a class. This is often used with functional interfaces where the parameters of the method match the parameters of the constructor.
+
+For example, suppose you have a `List<String>` and you want to convert all the strings to `StringBuilder` objects. You could do this with a lambda:
+
+```java
+List<String> list = Arrays.asList("a", "b", "c");
+List<StringBuilder> builders = list.stream()
+                                   .map(s -> new StringBuilder(s))
+                                   .collect(Collectors.toList());
+```
+
+But you could also do it with a method reference:
+
+```java
+List<String> list = Arrays.asList("a", "b", "c");
+List<StringBuilder> builders = list.stream()
+                                   .map(StringBuilder::new)
+                                   .collect(Collectors.toList());
+```
+
+In this case, `StringBuilder::new` is a reference to the constructor of the `StringBuilder` class. The constructor is called for each element of the list.
+
+This kind of method reference is useful when you're creating new objects in your lambda expression. It can make your code more concise and easier to read.
+
+In your `SecurityConfig` class, you could use a constructor reference if you were creating new instances of a class in a similar way. For example, if you had a method that took a `Supplier<CustomAuthenticationEntryPoint>`, you could pass `CustomAuthenticationEntryPoint::new` as the argument.
